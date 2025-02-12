@@ -98,17 +98,25 @@ erase.addEventListener('click',function() {
     }
 })
 
-
 function operate (num1, operator, num2){ //Main function
+
+    if (num1 !== "" && num2 !== "" && operator !== "") {
+        let number1 = parseFloat(num1);
+        let number2 = parseFloat(num2); 
+
     switch (operator){
-        case '÷': result = parseInt(num1)/parseInt(num2);
+        case '÷': result = number2 !== 0 ? number1/number2 : "Error";
         break;
-        case 'x': result = parseInt(num1)*parseInt(num2);
+        case 'x': result = number1*number2;
         break;
-        case '-': result = parseInt(num1)-parseInt(num2);
+        case '-': result = number1-number2;
         break;
-        case '+': result = parseInt(num1)+parseInt(num2);
+        case '+': result = number1+number2;
         break;
     }
     display.textContent = result;
+    num1 = result.toString();
+    num2 = "";
+    operator = "";
+}
 }
