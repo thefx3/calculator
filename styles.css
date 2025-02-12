@@ -3,22 +3,24 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 100px;
 
     background-color: black;
     border-radius: 10px;
-    border: 5px solid rgb(128, 8, 8);
+    border: 5px solid rgb(24, 4, 68);
 }
 
 .display {
+    box-sizing: border-box;
     font-size: 24px;
     text-align: center;
-    align-content: center;
-
+    align-content: end;
+    padding: 5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: white;
+    font-size: 50px;
 }
 
 .buttons {
@@ -48,7 +50,7 @@ button {
     background-color: rgb(100, 86, 86);
 }
 
-.operator {
+.operator,.equal,.erase{
     color : rgb(255, 255, 255);
     background-color: rgb(82, 6, 6);
 }
