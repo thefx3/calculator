@@ -23,7 +23,10 @@ const allnumbers = document.querySelectorAll('.number')
 allnumbers.forEach(button => { // Display the number when button clicked
     button.addEventListener('click',function() {
 
+        let value = button.textContent;
+
             if(result!=""){    // If there is already a result, start over
+                if (value === "." && num1.includes(".")) return;
                 num1 = button.textContent;
                 display.textContent = num1;
                 operator = "";
@@ -31,10 +34,12 @@ allnumbers.forEach(button => { // Display the number when button clicked
                 result = "";
             }
             else if (operator === ""){ 
+                if (value === "." && num1.includes(".")) return;
             num1 += button.textContent;
             display.textContent = num1;
             }
             else {
+                if (value === "." && num2.includes(".")) return;
             num2 += button.textContent;
             display.textContent = num2;
             }
