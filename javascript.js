@@ -1,6 +1,6 @@
 const calculator = document.querySelector('.calculator')
 calculator.style.height = "500px";
-calculator.style.width = "350px";
+calculator.style.width = "600px";
 
 const display = document.querySelector('.display') //Set the size of the display
 const calcheight = parseInt(calculator.style.height);

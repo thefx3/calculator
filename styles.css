@@ -29,10 +29,26 @@
 button {
     display: inline-block;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 12px;
 
     width: 20%;
     height: calc(100%/4);
 
     font-size: 18px;
+    font-weight: 800;
+}
+
+.number {
+    color : rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+}
+
+.special {
+    color : rgb(255, 255, 255);
+    background-color: rgb(100, 86, 86);
+}
+
+.operator {
+    color : rgb(255, 255, 255);
+    background-color: rgb(82, 6, 6);
 }
