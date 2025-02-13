@@ -85,7 +85,7 @@ equal.addEventListener('click',function() {
     operate(num1,operator,num2);
 })
 
-const erase = document.querySelector('.erase')      //Erase button
+const erase = document.querySelector('.erase')      //Backspace_delete button
 erase.addEventListener('click',function() {
     if (num1!="" && operator==="" && num2 === ""){
         num1 = num1.slice(0,-1);
@@ -103,7 +103,7 @@ erase.addEventListener('click',function() {
     }
 })
 
-function operate (num1, operator, num2){ //Main function
+function operate (num1, operator, num2){ //Main function to do the math
 
     if (num1 !== "" && num2 !== "" && operator !== "") {
         let number1 = parseFloat(num1);
